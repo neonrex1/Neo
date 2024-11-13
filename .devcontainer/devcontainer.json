@@ -4,8 +4,12 @@
 {
 	"name": "debian",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/vscode/devcontainers/base:debian",
+	// "image": "mcr.microsoft.com/vscode/devcontainers/base:debian",
 	//"image": "mcr.microsoft.com/windows:ltsc2019",
+	    "build": {
+        // Path is relative to the devcontainer.json file.
+        "dockerfile": "mcr.microsoft.com/windows"
+    }
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
